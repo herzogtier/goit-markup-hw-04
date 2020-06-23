@@ -260,8 +260,14 @@ h4 {
     margin-bottom: 30px;
 }
 
+.advantages-img-container:hover,
+.advantages-img-container:focus {
+    background-color: var(--main-accent-color);
+}
+
 .advantages-list-item img {
-    display: block;
+    display: flex;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     /* margin-bottom: 55px; */
