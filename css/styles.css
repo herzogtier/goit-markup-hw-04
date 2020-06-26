@@ -160,7 +160,7 @@ h4 {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
-    color: var(--alternative-text-color);   
+    color: var(--alternative-text-color);
 }
 
 /* .hero-button {
@@ -187,12 +187,13 @@ h4 {
 }
 
 .footer-flex-container {
+    padding-top: 48px;
     align-items: baseline;
 }
-
+/* 
 .footer-address {
     margin-top: 48px;
-}
+} */
 
 /*
 БЛОК ПРИСОЕДЕНЯЙТЕСЬ
@@ -205,11 +206,26 @@ h4 {
     margin-top: 21px;
 }
 
+.footer-join-us-item {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    align-items: center;
+    justify-content: center;
+}
+
 .footer-join-us-item:not(:last-child) {
     margin-right: 10px;
 }
 
+/* .footer-join-us-item:hover {
+    background-color: #2196f3;
+} */
+
 .footer-header-join-us {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--alternative-text-color);
 }
@@ -502,7 +518,7 @@ h4 {
     color: var(--main-accent-color);
 }
 
-.link-contact-text{
+.link-contact-text {
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -516,20 +532,18 @@ h4 {
     color: var(--main-accent-color);
 }
 
-.link-contact-text::before{
+.link-contact-text::before {
     align-items: center;
-    content: "";
+    content: '';
     width: 16px;
     height: 12px;
     margin-right: 10px;
     background-repeat: no-repeat;
-    background-position: center;  
+    background-position: center;
     background-image: url('../images/envelope-unhover.svg');
     /* background-color: red; */
     /* background-size: contain; */
-
 }
-
 
 /* .contact-mail {
 } */
@@ -540,11 +554,7 @@ h4 {
     margin-right: 10px;
     background-color: red;
     background-size: contain; */
-    /* background-image: url('../images/envelope-unhover.svg'); */
-}
-
-
-
+/* background-image: url('../images/envelope-unhover.svg'); }*/
 
 .link-break-styles {
     display: block;
@@ -625,3 +635,37 @@ h4 {
     margin-bottom: 50px;
 }
 
+/*Классы для описания свойств иконок соцсетей*/
+.social-flex-container {
+    display: flex;
+}
+
+.social-flex-container li {
+    align-items: center;
+}
+
+/* .socials-icon:hover {
+    fill: green;
+    background-color: #2196f3;
+} */
+
+.socials-link {
+    display: flex;
+    /* height: 44px;
+    width: 44px; */
+    /* background-color: currentColor; */
+    /* flex-grow: 2; */
+    align-items: center;
+    justify-content: center;
+    color: #afb1b8;
+}
+
+.socials-link:hover {
+    background-color: #2196f3;
+}
+
+.socials-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
