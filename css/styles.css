@@ -120,6 +120,11 @@ h4 {
     margin-right: 50px;
 }
 
+.header-contact-icon {
+    margin-right: 10px;
+    fill: #757575;
+}
+
 .nav-logo {
     align-items: center;
 }
@@ -270,16 +275,21 @@ h4 {
 }
 
 .advantages-img-container {
-    padding: 25px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 25px 100px; */
+    padding-top: 25px;
+    padding-bottom: 25px;
     background-color: var(--advantages-bgr-color);
     border-radius: 4px;
     margin-bottom: 30px;
 }
 
-.advantages-img-container:hover,
+/* .advantages-img-container:hover,
 .advantages-img-container:focus {
     background-color: var(--main-accent-color);
-}
+} */
 
 .advantages-list-item img {
     display: flex;
@@ -335,6 +345,20 @@ h4 {
     width: calc((100% - 60px) / 3);
 }
 
+.work-list-item p {
+    margin: 0px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
 /*
                         КЛАСС ДЛЯ ТЕКСТА НАЛОЖЕННОГО НА КАРТИНКУ (ПОКА ОТКЛЮЧЕН)
 */
@@ -359,6 +383,7 @@ h4 {
 /*
 класс для свойств заголовков Н3 на странице индекс в секции команды
 */
+
 .team-header-text {
     font-weight: 500;
     font-size: 16px;
@@ -382,7 +407,7 @@ h4 {
     letter-spacing: 0.03em;
     color: var(--main-paragraph-color);
     margin-top: 0px;
-    margin-bottom: 28px;
+    margin-bottom: 16px;
 }
 
 .team-list-item {
@@ -406,6 +431,33 @@ h4 {
     padding-right: 32px;
     padding-bottom: 36px;
     padding-left: 32px;
+}
+
+.team-socials-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.team-socials-link {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #afb1b8;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+.team-socials-link:hover {
+    background-color: #2196f3;
+}
+
+.team-socials-link:hover .socials-icon {
+    fill: #ffffff;
 }
 
 /*
@@ -561,7 +613,7 @@ h4 {
     align-items: center;
     font-size: 14px;
     font-weight: 500;
-    color: var(--header-text-color);
+    color: var(--main-paragraph-color);
     line-height: 80px;
 }
 
@@ -570,7 +622,12 @@ h4 {
     color: var(--main-accent-color);
 }
 
-.link-contact-text::before {
+.link-contact-text:hover svg,
+.link-contact-text:focus svg {
+    fill: var(--main-accent-color);
+}
+
+/* .link-contact-text::before {
     align-items: center;
     content: '';
     width: 16px;
@@ -579,9 +636,7 @@ h4 {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url('../images/envelope-unhover.svg');
-    /* background-color: red; */
-    /* background-size: contain; */
-}
+}     */
 
 /* .contact-mail {
 } */
