@@ -208,8 +208,8 @@ h4 {
 
 .footer-join-us-item {
     display: flex;
-    height: 44px;
-    width: 44px;
+    /* height: 44px;
+    width: 44px; */
     align-items: center;
     justify-content: center;
 }
@@ -413,7 +413,45 @@ h4 {
                             КЛАССЫ ДЛЯ РАБОТЫ С СЕКЦИЕЙ ПОСТОЯННЫХ КЛИЕНТОВ
 
 */
+.regular-customer-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
 
+.regular-customer-link {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+
+.regular-customer-icon {
+    fill: #afb1b8;
+}
+
+/* .regular-customer-icon:hover {
+    fill: #2196f3;
+} */
+
+.regular-customer-link:hover,
+.regular-customer-link:focus {
+    border-color: #2196f3;
+}
+
+.regular-customer-link:hover .regular-customer-icon {
+    fill: #2196f3;
+}
+/*
+
+                            Классы для страницы портфолио
+
+*/
 .nav-project-styles {
     font-style: normal;
     font-weight: bold;
@@ -651,13 +689,15 @@ h4 {
 
 .socials-link {
     display: flex;
-    /* height: 44px;
-    width: 44px; */
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
     /* background-color: currentColor; */
     /* flex-grow: 2; */
     align-items: center;
     justify-content: center;
-    color: #afb1b8;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .socials-link:hover {
